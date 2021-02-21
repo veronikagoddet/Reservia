@@ -11,6 +11,8 @@
 
   body{
     font-family: raleway;
+    margin: 0; 
+    
   }
 
 /*Header*/
@@ -18,8 +20,8 @@
 header{
     width: 1440px;
     margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
     display: flex;
     flex-direction: column;
 }
@@ -35,6 +37,11 @@ header{
     flex-direction: row;
     justify-content: space-between;
 }
+nav{
+    margin-right: 2%;
+    font-weight: bold;
+}
+
 
 nav ul{
     list-style-type: none;
@@ -46,6 +53,22 @@ nav ul{
 nav li{
     padding-inline-start: 60px;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav{
+    text-decoration: none;
+    color: #0065FC;
+
+}
+
+.nav:hover{
+    text-decoration: overline;
+    color: #0065FC;
+}
+
 
 h1{
     font-weight: bold;
@@ -79,9 +102,9 @@ form{
 }
 
 form i{
-    border: 1px solid #dae2e9;
+    border: 1px solid #F2F2F2 ;
     border-radius: 30px 0px 0px 30px;
-    background-color: #dae2e9;
+    background-color: #F2F2F2;
     padding: 1px 18px 1px 18px;
     color: black;
     font-weight: bold;
@@ -93,9 +116,9 @@ form i{
 }
 
 .bouton{
-    border: 1px solid #0D4EBF;
+    border: 1px solid #0065FC;
     border-radius: 0px 30px 30px 0px;
-    background-color: #0D4EBF;
+    background-color: #0065FC;
     color: white;
     font-size: 0.8em;
     font-weight: bold;
@@ -107,7 +130,7 @@ form i{
 }
 
 .search{
-    border: 1px solid #dae2e9;
+    border: 1px solid #F2F2F2;
     width: 184px;
     height: 50px;
     font-weight: bold;
@@ -118,7 +141,7 @@ form i{
 }
 
 h3{
-    font-weight: bold;
+    font-weight: bolder;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,6 +152,11 @@ h3{
     align-items: center;
     margin-top: 30px;
 }
+.fil{
+    display: flex;
+    align-items: center;
+    margin-top: -1.5%;
+}
 .filtre i{
     display: flex;
     justify-content: center;
@@ -136,10 +164,10 @@ h3{
 }
 
 .filtersDiv i{
-    border: 1px solid #C1DFF8;
+    border: 1px solid #DEEBFF;
     border-radius: 20px;
-    background-color: #C1DFF8;
-    color: #0D4EBF;
+    background-color: #DEEBFF;
+    color: #0065FC;
     width: 40px;
     height: 40px;
     display: flex;
@@ -147,9 +175,9 @@ h3{
 }
 
 .filtersDiv{
-    border-top: 1px #C1DFF8 solid ;
-    border-bottom: 1px #C1DFF8 solid ;
-    border-right: 1px #C1DFF8 solid ;
+    border-top: 1px #DEEBFF solid ;
+    border-bottom: 1px #DEEBFF solid ;
+    border-right: 1px #DEEBFF solid ;
     border-radius: 20px;
     height: 40px;
     margin-bottom: 20px;
@@ -162,6 +190,7 @@ h3{
     border-radius: 0 20px 20px 0;
     height: 70%;
     padding: 10px 10px 0 10px;
+    font-weight: bold;
 }
 
 .filtersDiv:hover{
@@ -169,10 +198,9 @@ h3{
     border: none;
 }
 
-
 .info i{
-    color: #0e2bf9;
-    border: 1px solid #C8CCE5;
+    color: #0065FC;
+    border: 1px solid #DEEBFF;
     border-radius: 20px;
     width: 30px;
     height: 30px;
@@ -188,7 +216,6 @@ h3{
     align-items: center;
 }
 
-
 /*Main*/
 
 main{
@@ -196,32 +223,39 @@ main{
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-    
+    margin-left: 5%;
+    margin-right: 5%;  
 }
+
 .bloc1bloc2{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 /*Section Hébergement*/
 
 #hebergements{
-margin-left: 1%;
+margin-left: 5%;
+}
+
+.el{
+    text-decoration: none;
+}
+.el:hover{
+    text-decoration: none;   
 }
 
 .hebergement{
-    border: 2px solid #dae2e9;
-    background-color: #dae2e9;
+    border: 2px solid #F2F2F2;
+    background-color: #F2F2F2;
     border-radius: 20px;
-    width: 68%;
+    width: 65%;
     height: auto;
     padding-top: 3%;
     font-weight: bolder;
     font-size: 1.2em;  
-    padding-left: 2%;
+  
 }
 
 .bloc1{
@@ -229,21 +263,19 @@ margin-left: 1%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: -3%;
     padding-top: 2%;
-
 }
 
 .element
 {   
-    width: 25%;
+    width: 20%;
     height: 200px;
     border: 1px solid white;
     border-radius: 15px 15px 15px 15px;
     background-color: white;
-    padding-left: 0.2%;
-    padding-right: 0.2%; 
-    font-size: larger;
+    padding-left: 0.3%;
+    padding-right: 0.3%; 
+    font-size: small;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;  
@@ -262,45 +294,64 @@ margin-left: 1%;
 .desc
 {
     font-size: small; 
+    color: black;
     padding-left: 3%;
-    padding-bottom: 1%;
     text-align: left; 
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
 }
+
 .prix{
-	font-weight: lighter;
-    
-  
+	font-weight: lighter;      
 }
-.desc i{
-    color: #0481EE;   
+
+.etoile{
+    color: #0065FC; 
+    display: flex;
+    flex-direction: row;
+  
 }
 
 .afficher{
     font-size: smaller;
+    margin-left: 5%;
 }
 
 /*Section Les plus populaires*/
 
 .populaires{
     
-    width: 25%;
+    width: 30%;
     height: auto;	
     margin-left: 1%;
-    border: 2px solid #dae2e9;
-    background-color: #dae2e9;
+    border: 2px solid #F2F2F2;
+    background-color: #F2F2F2;
     border-radius: 20px;
     font-size: 1.2em;
     font-weight: bold;
     display: flex;
     flex-direction: column;
 }
+.pop i{
+  padding-top: 5%;
+  
+}
 .pop{
     display: flex;
-    padding: 5%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+
+ 
 }
-.etoiles{
+.etoile1{
     padding-top: 10%;
+    display: flex;
+    flex-direction: row;
 }
 .bloc2{
     font-size: large;
@@ -316,8 +367,9 @@ margin-left: 1%;
     border: 1px solid white;
     border-radius: 15px 15px 15px 15px;
     background-color: white;
-    font-size: larger;
+    font-size: small;
     display: flex;
+    flex-direction: row;
 }
 
 .element1 img{
@@ -332,16 +384,23 @@ margin-left: 1%;
 }
 
 .asidedesc{
-    font-size: medium; 
-    font-size: 0.5em; 
+    font-size: small; 
+    color: black;
     padding-top: 5px;
     padding-left: 5px;
     padding-bottom: 5px;
     text-align: left; 
+    margin: 1%;   
+}
+.el1{
+    text-decoration: none;
+}
+.el1:hover{
+    text-decoration: none;
 }
 
-.asidedesc i{
-    color: #0481EE;   
+.etoile1{
+    color: #0065FC;   
 }
 
 .prix1{
@@ -355,7 +414,7 @@ margin-left: 1%;
     flex-direction: column;
     margin-top: 3%;
     margin-bottom: 2%; 
-    margin-left: 1%;
+  
 }
 .activ a{
     font-size: 1.2em;
@@ -363,12 +422,14 @@ margin-left: 1%;
 }
 .bloc3{
     display: flex;
+    flex-direction: row;
     margin-left: -3%;
 }
+
 figure{
     border: 1px solid transparent;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 2px 2px #CCDDEC;
+    box-shadow: 0px 10px 10px #F2F2F2;
 }
 figure img{
     width: 100%;
@@ -380,6 +441,15 @@ figcaption{
     font-size: medium;
     padding: 20px;
 }
+
+.port{
+    width: 80%;
+    height: auto;
+}
+.calanques{
+    width: 80%;
+    height: auto;
+}
 .grand img{
     height: 390px;
 }
@@ -387,35 +457,37 @@ figcaption{
 .ensemble{
     display: flex;
     flex-direction: column;
+    width: 90%;
+    height: auto;
 }
-
 .moyen img{
     height: 180px;
 }
-
 .etroit img{
     height: 110px;
 }
-
 .element2 img{
     height: 145px;
 }
+
 
 /*Footer*/
 footer{
     
     display: flex;   
-    background-color: #CCDDEC ;
+    background-color: #F2F2F2 ;
     justify-content: flex;
     font-size: small;
+    
 }
 .propos{
     display: flex;
     width: 100%;
     flex-direction: column;    
-    margin-left: 2%;
-    margin-right: 15%;
-    margin-bottom: 2%;
+   
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 5%;
 }
 ul {
     list-style-type: none;
