@@ -235,10 +235,6 @@ main{
 
 /*Section Hébergement*/
 
-#hebergements{
-margin-left: 3%;
-}
-
 .hebergement{
     border: 2px solid #F2F2F2;
     background-color: #F2F2F2;
@@ -249,6 +245,9 @@ margin-left: 3%;
     font-weight: bolder;
     font-size: 1.2em;   
 }
+#hebergements{
+margin-left: 3%;
+}
 .bloc1{
     display: flex;
     flex-direction: row;
@@ -258,7 +257,7 @@ margin-left: 3%;
 }
 .element{   
     width: 25%;
-    height: 200px;
+    height: auto;
     margin: 3%;
     border: 1px solid white;
     border-radius: 15px 15px 15px 15px;
@@ -269,16 +268,11 @@ margin-left: 3%;
     flex-wrap: wrap;  
     align-items: center; 
 }
-.image{
-    margin: 0;
-}
-.element img{
-    width: 100%;
+.el img{
+    width: 97%;
     height: 114px;
     border: 1px solid transparent;
     border-radius: 15px 15px 0px 0px; 
-}
-.el img{
     padding-top: 2px;
     padding-left: 2px;
     padding-bottom: 2px;
@@ -295,12 +289,14 @@ margin-left: 3%;
 {
     font-size: small; 
     color: black;
-    padding-left: 3%;
+    padding-left: 5%;
+    padding-bottom: 5%;
     text-align: left; 
     display: flex;
     flex-direction: column;
 }
 .hotel{
+    margin-top: 0%;
     margin-bottom: 0%;
 }
 .prix{
@@ -364,22 +360,23 @@ margin-left: 3%;
     margin-bottom: 10%;   
 }
 .element1 img{
-    width: 130px;
+    width: 145px;
     height: 95%;
     border: 1px solid transparent;
     border-radius: 15px 0px 0px 15px; 
     padding-top: 2px;
     padding-left: 2px;
+    padding-right: 15px;
     padding-bottom: 2px; 
     object-fit: cover;
 }
 .asidedesc{
     font-size: small; 
     color: black;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: left; 
-    margin: 3%;  
+    margin: 0%;
     display: flex;
     flex-direction: column;
 }
@@ -398,7 +395,7 @@ margin-left: 3%;
     margin-top: 5%;
 }
 .etoile1{
-    padding-top: 20%;
+    padding-top: 25%;
     color: #0065FC; 
     display: flex;
     flex-direction: row;
