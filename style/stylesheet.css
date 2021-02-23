@@ -236,14 +236,7 @@ main{
 /*Section Hébergement*/
 
 #hebergements{
-margin-left: 5%;
-}
-
-.el{
-    text-decoration: none;
-}
-.el:hover{
-    text-decoration: none;   
+margin-left: 3%;
 }
 
 .hebergement{
@@ -254,10 +247,8 @@ margin-left: 5%;
     height: auto;
     padding-top: 3%;
     font-weight: bolder;
-    font-size: 1.2em;  
-  
+    font-size: 1.2em;   
 }
-
 .bloc1{
     display: flex;
     flex-direction: row;
@@ -265,32 +256,41 @@ margin-left: 5%;
     justify-content: space-between;
     padding-top: 2%;
 }
-
-.element
-{   
-    width: 20%;
+.element{   
+    width: 25%;
     height: 200px;
+    margin: 3%;
     border: 1px solid white;
     border-radius: 15px 15px 15px 15px;
     background-color: white;
-    padding-left: 0.3%;
-    padding-right: 0.3%; 
     font-size: small;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;  
     align-items: center; 
 }
-
-.element img
-{
+.image{
+    margin: 0;
+}
+.element img{
     width: 100%;
     height: 114px;
     border: 1px solid transparent;
     border-radius: 15px 15px 0px 0px; 
-    object-fit: cover;
 }
-
+.el img{
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    padding-right: 2px;
+    object-fit: cover; 
+}
+.el{
+    text-decoration: none; 
+}
+.el:hover{
+    text-decoration: none;   
+}
 .desc
 {
     font-size: small; 
@@ -299,29 +299,29 @@ margin-left: 5%;
     text-align: left; 
     display: flex;
     flex-direction: column;
-    margin: 0%;
 }
-
+.hotel{
+    margin-bottom: 0%;
+}
 .prix{
-	font-weight: lighter;      
+	font-weight: lighter;  
+    margin-top: 2%;
+    margin-bottom: 3%;
 }
-
 .etoile{
     color: #0065FC; 
     display: flex;
-    flex-direction: row;
-  
+    flex-direction: row; 
 }
 
 .afficher{
     font-size: smaller;
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 /*Section Les plus populaires*/
 
-.populaires{
-    
+.populaires{   
     width: 30%;
     height: auto;	
     margin-left: 1%;
@@ -333,34 +333,26 @@ margin-left: 5%;
     display: flex;
     flex-direction: column;
 }
-.pop i{
-  padding-top: 5%;
-  
-}
 .pop{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 4%;
+    padding-top: 5%;
     padding-left: 10%;
     padding-right: 10%;
-
-
- 
 }
-.etoile1{
-    padding-top: 10%;
-    display: flex;
-    flex-direction: row;
+.pop i{
+  padding-top: 5%;
+  
 }
 .bloc2{
     font-size: large;
     font-weight: bold;
+    margin-top: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .element1{
     width: 80%;
     height: 135px;
@@ -369,11 +361,10 @@ margin-left: 5%;
     background-color: white;
     font-size: small;
     display: flex;
-    flex-direction: row;
+    margin-bottom: 10%;   
 }
-
 .element1 img{
-    width: 129px;
+    width: 130px;
     height: 95%;
     border: 1px solid transparent;
     border-radius: 15px 0px 0px 15px; 
@@ -382,31 +373,36 @@ margin-left: 5%;
     padding-bottom: 2px; 
     object-fit: cover;
 }
-
 .asidedesc{
     font-size: small; 
     color: black;
     padding-top: 5px;
-    padding-left: 5px;
     padding-bottom: 5px;
     text-align: left; 
-    margin: 1%;   
+    margin: 3%;  
+    display: flex;
+    flex-direction: column;
 }
 .el1{
     text-decoration: none;
+    display: flex;
 }
 .el1:hover{
     text-decoration: none;
 }
-
-.etoile1{
-    color: #0065FC;   
+.hotel{
+    margin-top: 3%;
 }
-
 .prix1{
 	font-weight: lighter;
+    margin-top: 5%;
 }
-
+.etoile1{
+    padding-top: 20%;
+    color: #0065FC; 
+    display: flex;
+    flex-direction: row;
+}
 /*Activités*/
 
 .activ{
@@ -418,7 +414,7 @@ margin-left: 5%;
 }
 .activ a{
     font-size: 1.2em;
-    font-weight: bold;
+    font-weight: bolder;
 }
 .bloc3{
     display: flex;
@@ -437,7 +433,7 @@ figure img{
     object-fit: cover;
 }
 figcaption{
-    font-weight: bold;
+    font-weight: bolder;
     font-size: medium;
     padding: 20px;
 }
