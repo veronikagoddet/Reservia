@@ -1,9 +1,6 @@
-@media only screen and (min-width: 375px) and (max-width: 500px) 
-{}
 
 /*Définition de la police personnalisée*/
 
-/* vietnamese */
 @font-face {
     font-family: 'Raleway';    
     src: url("Raleway/Raleway-VariableFont_wght.ttf");  
@@ -11,14 +8,13 @@
 
   body{
     font-family: raleway;
-    margin: 0; 
-    
-  }
+    margin: 0;
+}
 
 /*Header*/
 
 header{
-    width: 1440px;
+   
     margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
@@ -30,15 +26,17 @@ header{
     width: auto;
     height: 50px;
     display: flex;
+    padding: 0;
 }
 
 .entete{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0;
 }
 nav{
-    margin-right: 2%;
+   
     font-weight: bold;
 }
 
@@ -150,7 +148,7 @@ h3{
 .filtre{
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 28px;
 }
 .fil{
     display: flex;
@@ -222,15 +220,14 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 2%;
     margin-left: 5%;
-    margin-right: 5%;  
+    margin-right: 5%;
 }
 
 .bloc1bloc2{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    margin-top: 2%;
 }
 
 /*Section Hébergement*/
@@ -243,21 +240,22 @@ main{
     height: auto;
     padding-top: 3%;
     font-weight: bolder;
-    font-size: 1.2em;   
+    font-size: 1.2em;  
 }
 #hebergements{
 margin-left: 3%;
 }
 .bloc1{
     display: flex;
-    flex-direction: row;
+
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 2%;
+    margin-right: 3%;
 }
 .element{   
     width: 25%;
-    height: auto;
+    height: 200px;
     margin: 3%;
     border: 1px solid white;
     border-radius: 15px 15px 15px 15px;
@@ -266,10 +264,10 @@ margin-left: 3%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;  
-    align-items: center; 
+    align-items: center;
 }
 .el img{
-    width: 97%;
+    width: 100%;
     height: 114px;
     border: 1px solid transparent;
     border-radius: 15px 15px 0px 0px; 
@@ -320,7 +318,6 @@ margin-left: 3%;
 .populaires{   
     width: 30%;
     height: auto;	
-    margin-left: 1%;
     border: 2px solid #F2F2F2;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -348,6 +345,7 @@ margin-left: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 2%;
 }
 .element1{
     width: 80%;
@@ -414,44 +412,53 @@ margin-left: 3%;
     font-weight: bolder;
 }
 .bloc3{
-    display: flex;
-    flex-direction: row;
-    margin-left: -3%;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    display: flex;     
 }
 
-figure{
-    border: 1px solid transparent;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 10px 10px #F2F2F2;
-}
-figure img{
+a img{
     width: 100%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
-figcaption{
+.text{
     font-weight: bolder;
     font-size: medium;
     padding: 20px;
 }
-
-.port{
+.grand{
     width: 80%;
     height: auto;
-}
-.calanques{
-    width: 80%;
-    height: auto;
+    border: 1px solid transparent;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 10px 10px #F2F2F2; 
+    margin-right: 3%; 
 }
 .grand img{
     height: 390px;
 }
-
-.ensemble{
+.ensemble1{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 80%;
     height: auto;
+    border: 1px solid transparent;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 10px 10px #F2F2F2;
+    margin-right: 3%;
+}
+
+.ensemble2{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 10px 10px #F2F2F2;
+    margin-right: 0%;
 }
 .moyen img{
     height: 180px;
@@ -459,32 +466,36 @@ figcaption{
 .etroit img{
     height: 110px;
 }
-.element2 img{
+.eglise img{
     height: 145px;
 }
-
+.parc img{
+height: 145px;
+}
 
 /*Footer*/
 footer{
     
-    display: flex;   
+    display: flex;  
+    justify-content: space-evenly; 
     background-color: #F2F2F2 ;
-    justify-content: flex;
+   
     font-size: small;
     
 }
 .propos{
     display: flex;
-    width: 100%;
     flex-direction: column;    
-   
+    width: 100%;
     margin-top: 2%;
     margin-bottom: 5%;
     margin-left: 5%;
+ 
+    
 }
 ul {
     list-style-type: none;
 }
 .propos p{
-    margin: 1%;
+    margin-top: 1%;
 }
