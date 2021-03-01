@@ -16,16 +16,21 @@
 
     <!--Header-->
     <header>
-
+    <!--Logo et navigateur-->
         <div class="entete">
             <div class="logo">
                 <p><img src="images/logo/Reservia@3x.png"></p>
             </div>
+
             <nav>
                 <ul>
-                    <li><a class="nav" href="#hebergements">Hébergements</a></li>
-                    <li><a  href="#activites">Activités</a></li>
-                    <li><a class="nav" href="#s'inscrire">S'inscrire</a></li>
+                    <div class="hebact"> <!--Pour gestion en responsive-->
+                        <li><a class="nav" href="#hebergements"><div id="trait_dessus">Hébergements</div></a></li>
+                        <li><div id="trait_dessous"><a  href="#activites">Activités</div></a></li><!--Trait pour responsive-->
+                    </div>
+                    <div class="inscrire"><!--Pour gestion en responsive-->
+                        <li><a class="nav" href="#s'inscrire">S'inscrire</a></li>
+                    </div>
                 </ul>
             </nav>
         </div>
@@ -33,17 +38,30 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <h2>En plein centre ville ou en pleine nature</h2>
  
+            <!--Formulaire de saisi-->
             <div class="recherche">
                 <form action="#">
                     <i class="fas fa-map-marker-alt"></i><input type="search" name="recherche" 
                     class="search" placeholder="Marseille, France"/><input type="submit" class="bouton" value="Rechercher"/>
                 </form>
+            </div> 
+           
+            <div class="variante">
+            <form action="#">
+                <div class="partie1">
+                    <i class="fas fa-map-marker-alt"></i><input type="search" name="rech" 
+                    class="glass" placeholder="Marseille, France"/>
+                </div> 
+                <div class="partie2"><i class="fas fa-search"></i>
+                </div>
+            </form> 
             </div>
 
+        <!--Filtres-->
         <div class="filtre">
-            <div class="fil">
+            
                 <h3>Filtres</h3>
-            </div>
+            
                 <div class="filtersDiv">
                     <i class="fas fa-money-bill-wave"></i><b class="filtersText">Economique</b>
                 </div>
@@ -205,9 +223,7 @@
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
                         </div>
                     </div>
-                </a>
-        
-               
+                </a>            
 
             </div>
         </section>

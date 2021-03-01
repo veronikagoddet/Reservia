@@ -15,26 +15,34 @@
 
 header{
    
-    margin-top: 2%;
+    margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
     flex-direction: column;
 }
-/*Logo*/
-.logo img{
-    width: auto;
-    height: 50px;
-    display: flex;
-    padding: 0;
-}
+
 /*Logo et navigateur*/
 
 .entete{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0;
+    margin-top: 3%;
+}
+
+/*Logo*/
+.logo img{
+    width: auto;
+    height: 50px;
+    display: flex;
+    padding: 0;
+    margin-top: 3%;
+}
+#trait_dessus{
+    border-top : 1px solid #0065FC;
+    width : 120px;
+    text-align: center;
 }
 nav{  
     font-weight: bold;
@@ -45,6 +53,10 @@ nav ul{
     display: flex;
     justify-content: flex-end;
 }
+.hebact{
+    display: flex;
+}
+
 nav li{
     padding-inline-start: 60px;
 }
@@ -75,7 +87,9 @@ h2{
     font-size: small;
     margin-top: 0mm;
 }
- /*Bouton recherche*/
+ /*Boutons recherche*/
+
+/*Bouton principal*/
 .recherche{
     display: flex;
     font-size: 1.3em;
@@ -129,24 +143,25 @@ form i{
     display: flex;
     align-items: center;
 }
+/*2ème bouton*/
+
+.variante{
+    display: none;
+}
 
 /*Filtres*/
 
-h3{
-    font-weight: bolder;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .filtre{
     display: flex;
     align-items: center;
     margin-top: 28px;
+    margin-bottom: 2%;
 }
-.fil{
+h3{
+    font-weight: bolder;
     display: flex;
-    align-items: center;
-    margin-top: -1.5%;
+    justify-content: center;
+    margin: 0;
 }
 .filtre i{
     display: flex;
@@ -161,7 +176,7 @@ h3{
     width: 40px;
     height: 40px;
     display: flex;
-    align-items: center;
+    align-items: center;   
 }
 .filtersDiv{
     border-top: 1px #DEEBFF solid ;
@@ -169,7 +184,6 @@ h3{
     border-right: 1px #DEEBFF solid ;
     border-radius: 20px;
     height: 40px;
-    margin-bottom: 20px;
     margin-left: 2%;
     display: flex;
     align-items: center;
@@ -186,6 +200,7 @@ h3{
 }
 
 /*Info*/
+
 .info i{
     color: #0065FC;
     border: 1px solid #DEEBFF;
@@ -197,7 +212,6 @@ h3{
     align-items: center; 
     margin-right: 10px;
 }
-
 .info
 {
     display: flex;
@@ -241,6 +255,7 @@ margin-left: 3%;
 }
 
 /*Bloc hébergement*/
+
 .bloc1{
     height: 450px;
     display: flex;
@@ -483,7 +498,6 @@ footer{
     display: flex;  
     justify-content: space-evenly; 
     background-color: #F2F2F2 ;
-   
     font-size: small;
     
 }
@@ -493,9 +507,7 @@ footer{
     width: 100%;
     margin-top: 2%;
     margin-bottom: 5%;
-    margin-left: 5%;
- 
-    
+    margin-left: 5%;  
 }
 ul {
     list-style-type: none;
@@ -505,19 +517,250 @@ ul {
 }
 
 /*Pour téléphone*/
-@media (max-width:768px){
+@media (width: 375px){
 
+header{
+    width: auto;
+    
 }
 
+/*Logo*/
+
+.logo img{
+    height: 40px;
+}
+.entete{
+  
+}
+
+/*Navigateur*/
+
+#trait_dessus{
+    border-top: none;
+    border-bottom : 1px solid #0065FC;
+}
+#trait_dessous{
+    border-bottom : 1px solid #F2F2F2;
+    width : 120px;
+    text-align: center;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hebact{
+    display: flex;   
+}
+ul{
+    flex-flow: wrap-reverse;
+}
+
+h1{
+    width: 250px; /* à modifier selon besoins */
+    overflow: hidden;
+}
+h2{
+    margin-top: 2%;
+}
+
+/*Bouton recherche*/
+
+.recherche{
+    display: none;
+}
+.variante{
+    display: flex;
+    margin-top: 5%;
+}
+form{
+    display: flex;
+    justify-content: center;  
+}
+.partie1{
+    display: flex;
+}
+.partie1 i{
+    border: 1px solid #F2F2F2 ;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #F2F2F2;
+    padding: 1px 18px 1px 18px;
+    color: black;
+    font-weight: bolder;
+    width: 12px;
+    height: 47px;
+    text-align: center; 
+    display: flex;
+    align-items: center; 
+}
+.glass{
+    border: 1px solid #F2F2F2;
+    width: 184px;
+    height: 50px;
+    font-weight: bolder;
+    color: black;
+    padding: 1px 18px 1px 18px;
+    display: flex;
+    align-items: center;
+}
+.partie2 i{
+    border: 1px solid #0065FC ;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #0065FC;
+    padding: 1px 18px 1px 18px;
+    color: white;
+    font-weight: bolder;
+    width: 12px;
+    height: 47px;
+    text-align: center; 
+    display: flex;
+    align-items: center; 
+}
+/*Filtres*/
+.filtre{
+    flex-wrap: wrap;
+}
+
+h3{
+    width: 175px; /* à modifier selon besoins */
+    overflow: hidden;
+    margin-bottom: 3%;    
+}
+
+/*Blocs hébérgement et populaires*/
+main{
+    margin: 5%;
+    width: auto;
+    height: auto;
+}
+.bloc1bloc2{ 
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;    
+}
+
+/*Bloc populaires*/
+
+.populaires{   
+    width: 100%; 
+    border-radius: 0px;
+}
+.bloc2{
+    height: auto;
+ 
+}
+.el1{
+    width: 90%;
+}   
+
+/*Bloc hébergements*/
+
+.hebergement{
+    margin-top: 10%;
+    border: transparent;
+    background-color:transparent;
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+}
+.bloc1{
+    height: auto;
+}
+.el{
+    margin-top: 5%;
+    width: 100%;
+}
+
+/*Bloc activités*/
+
+.activ{
+    height: auto;  
+    margin-top: 10%; 
+}
+.bloc3{
+    width: 100%;
+    height: auto;
+    display: flex; 
+    flex-direction: column;   
+}
+.ensemble1{
+    display:contents;
+    width: 100%;
+}
+.ensemble2{
+    display:contents;
+    width: 100%;
+}
+.grand{
+    width: 100%;
+    margin-top: 10%;
+}
+
+.moyen{
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 10px 10px #F2F2F2;
+    margin-right: 3%;
+}
+.etroit{
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 10px 10px #F2F2F2;
+    margin-right: 3%;
+}
+.eglise{
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 10px 10px #F2F2F2;
+    margin-right: 3%;
+}
+.parc{
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 10px 10px #F2F2F2;
+    margin-right: 3%;
+}
+.grand img{
+    height: 145px;
+}
+.moyen img{
+    height: 145px;
+}
+.etroit img{
+ 
+    height: 145px;
+}
+a img{
+    width: 100%;
+}
+
+/*Footer*/
+footer{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
 
 /*Pour tablette*/
+@media (min-width: 375px) and (max-width: 667px){}
 @media (min-width :768px) and (max-width :1024px){
 
     header{
     width: auto;
-    margin-top: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
     display: flex;
     flex-direction: column;
 }
